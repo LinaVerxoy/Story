@@ -1,0 +1,30 @@
+﻿<Window x:Class="LittleDragon.FirstSeriesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LittleDragon"
+        mc:Ignorable="d"
+        Title="FirstSeriesWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <!-- Для изображения -->
+            <RowDefinition Height="Auto"/>
+            <!-- Для текстового блока -->
+            <RowDefinition Height="Auto"/>
+            <!-- Для кнопок -->
+        </Grid.RowDefinitions>
+
+        <Image x:Name="Image" Stretch="Uniform" Margin="0" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+        <TextBlock x:Name="StoryTextBlock" 
+               TextWrapping="Wrap" 
+               FontSize="16" 
+               Margin="10" 
+               Grid.Row="1" 
+               HorizontalAlignment="Stretch"/>
+
+        <StackPanel x:Name="ButtonPanel" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10"/>
+    </Grid>
+</Window>
